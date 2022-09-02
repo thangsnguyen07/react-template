@@ -7,7 +7,7 @@
         "react-app",
         "airbnb",
         "plugin:react/recommended",
-        "plugin:react/jsx-runtime"
+        "plugin:prettier/recommended"
     ],
     "overrides": [
     ],
@@ -16,16 +16,19 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
-        "react/jsx-filename-extension": "off",
         "quotes": [
             "error",
             "double",
             {
                 "avoidEscape": true
             }
-        ]
+        ],
+        "react/jsx-uses-react": ["off"],
+        "react/react-in-jsx-scope": ["off"],
+        "react/jsx-props-no-spreading": ["warn"]
     }
 }
